@@ -19,8 +19,15 @@ minikube image load <IMAGE_NAME>
 Or you can build the image directly to minikube by using:
 
 ```
-minikube image build -t <IMAGE_NAME> .
+minikube image build -t <dockerfile_Path> .
 ```
+
+Example change inside the directory where there is the dockerfile and the project and type
+
+```
+minikube image build .
+```
+
 
 ## Deployment on Seldon Core
 
